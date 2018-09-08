@@ -8,6 +8,7 @@
 
 #### Prerequisites  
 - elm
+- dep
 - docker
 - docker-compose
 
@@ -17,8 +18,7 @@
 1) cd this repo
 2) rm -rf .git
 3) git init
-4) dep ensure (or whatever)
-5) npm/yarn install
-6) cd docker && docker-compose up
-7) buffalo db create && buffalo db migrate
-8) cd project root && buffalo dev
+4) buffalo setup
+5) cd docker && docker-compose up
+6) buffalo db create && buffalo db migrate
+7) cd project root && buffalo dev
