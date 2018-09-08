@@ -1,6 +1,7 @@
 package actions
 
 import (
+	"github.com/debudda/buffalo_elm_starter/models"
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/buffalo/middleware"
 	"github.com/gobuffalo/buffalo/middleware/ssl"
@@ -42,7 +43,7 @@ func App() *buffalo.App {
 		// Wraps each request in a transaction.
 		//  c.Value("tx").(*pop.PopTransaction)
 		// Remove to disable this.
-		//app.Use(middleware.PopTransaction(models.DB))
+		app.Use(middleware.PopTransaction(models.DB))
 
 		// Setup and use translations:
 		app.Use(translations())
