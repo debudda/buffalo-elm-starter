@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/buffalo_elm_starter/actions"
+	"github.com/debudda/buffalo_elm_starter/actions"
 )
 
 // main is the starting point to your Buffalo application.

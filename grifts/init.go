@@ -1,7 +1,7 @@
 package grifts
 
 import (
-	"github.com/buffalo_elm_starter/actions"
+	"github.com/debudda/buffalo_elm_starter/actions"
 	"github.com/gobuffalo/buffalo"
 )
 

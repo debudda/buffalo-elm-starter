@@ -7,7 +7,7 @@ import (
 	"github.com/gobuffalo/envy"
 	"github.com/unrolled/secure"
 
-	//"github.com/buffalo_elm_starter/models"
+	//"github.com/debudda/buffalo_elm_starter/models"
 	"github.com/gobuffalo/buffalo/middleware/csrf"
 	"github.com/gobuffalo/buffalo/middleware/i18n"
 	"github.com/gobuffalo/packr"
@@ -47,9 +47,10 @@ func App() *buffalo.App {
 		// Setup and use translations:
 		app.Use(translations())
 
-		app.GET("/", HomeHandler)
+		app.ServeFiles("/assets", assetsBox) // serve files from the public directory
 
-		app.ServeFiles("/", assetsBox) // serve files from the public directory
+		app.GET("/", HomeHandler)
+		app.GET("/{path:.+}", HomeHandler)
 	}
 
 	return app
