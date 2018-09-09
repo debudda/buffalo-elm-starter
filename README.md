@@ -13,11 +13,18 @@
 - docker-compose
 
 #### How to start
+**let** 
+ 
+* codeHubOfYourPreference = "gitlab.com"
+* yourUsername = "debudda"
+* yourProjectName = "myAwesomeProject"  
 
-0) cd $GOPATH/src/{code hub of your preference (ie github.com/gitlab.com)}/{your username}/
-1) git clone https://github.com/debudda/buffalo-elm-starter.git {your app name}
-2) cd {your app name}
-3) replace "github.com/debudda/buffalo_elm_starter" with "{your code hub}/{your username}/{your app name}" (sic!)
+**in**  
+
+0) cd $GOPATH/src/{codeHubOfYourPreference}/{yourUsername}/
+1) git clone https://github.com/debudda/buffalo-elm-starter.git {youProjectName}
+2) cd {yourProjectName}
+3) replace "github.com/debudda/buffalo_elm_starter" with "{codeHubOfYourPreference}/{yourUsername}/{yourProjectName}" (sic!)
 4) rm -rf .git
 5) git init 
 6) cd docker && docker-compose up
