@@ -24,7 +24,7 @@
 0) cd $GOPATH/src/{codeHubOfYourPreference}/{yourUsername}/
 1) git clone https://github.com/debudda/buffalo-elm-starter.git {youProjectName}
 2) cd {yourProjectName}
-3) replace "github.com/debudda/buffalo_elm_starter" with "{codeHubOfYourPreference}/{yourUsername}/{yourProjectName}" (sic!)
+3) _sic!_ replace "github.com/debudda/buffalo_elm_starter" with "{codeHubOfYourPreference}/{yourUsername}/{yourProjectName}"
 4) rm -rf .git
 5) git init 
 6) cd docker && docker-compose up
